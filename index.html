@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: lightblue;
+            position: relative;
+            z-index: 1;
+        }
+
+        body::before {
+            content: "";
+            background: url('ok.png') no-repeat center center fixed;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4; /* Adjust transparency */
+            z-index: -1;
+        }
+
+        .container {
+            background: rgba(230, 230, 230, 0.9); /* Transparent container */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .center-tabs a {
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+            background: #007BFF;
+            border-radius: 5px;
+        }
+
+        .center-tabs a.active {
+            background: #0056b3;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 5px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .center-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center-tabs">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="button-container">
+            <a href="#" class="button">Add User</a>
+            <a href="#" class="button">Logout</a>
+        </div>
+        <!-- Add your dashboard content here -->
+    </div>
+</body>
+</html>
